@@ -33,8 +33,7 @@ export default function Footer() {
           <div>
             <h4>Inquiries</h4>
             <ul className="footer-list">
-              <li><a href="mailto:hello@brineandember.com">hello@brineandember.com</a></li>
-              <li><a href="mailto:investors@brineandember.com">investors@brineandember.com</a></li>
+              <li><a href="mailto:josh@brineandember.earth">josh@brineandember.earth</a></li>
             </ul>
           </div>
         </div>

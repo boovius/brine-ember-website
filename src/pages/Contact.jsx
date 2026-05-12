@@ -19,7 +19,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\nReason: ${form.reason}\n\n${form.message}`
     )
-    window.location.href = `mailto:hello@brineandember.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:josh@brineandember.earth?subject=${subject}&body=${body}`
     setStatus({ kind: 'ok', text: 'Opening your email client…' })
   }
 
@@ -51,20 +51,8 @@ export default function Contact() {
 
             <ul className="contact-list">
               <li>
-                <span className="small">General</span>
-                <a href="mailto:hello@brineandember.com">hello@brineandember.com</a>
-              </li>
-              <li>
-                <span className="small">Investors</span>
-                <a href="mailto:investors@brineandember.com">investors@brineandember.com</a>
-              </li>
-              <li>
-                <span className="small">Retail &amp; Wholesale</span>
-                <a href="mailto:retail@brineandember.com">retail@brineandember.com</a>
-              </li>
-              <li>
-                <span className="small">Agricultural Partners</span>
-                <a href="mailto:soil@brineandember.com">soil@brineandember.com</a>
+                <span className="small">General · Investors · Retail · Partners</span>
+                <a href="mailto:josh@brineandember.earth">josh@brineandember.earth</a>
               </li>
             </ul>
           </Reveal>
