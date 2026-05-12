@@ -27,14 +27,18 @@ export default function About() {
             <h4>Mission</h4>
             <h2>Turn an overlooked ingredient into climate infrastructure.</h2>
             <p>
-              For every bowl of dashi served, 30%+ of the harvested kelp is thrown away.
-              That waste is premium biomass — and the same biomass that, when carbonized,
-              becomes one of the most durable carbon sinks on the planet.
+              Originating as an umami-rich soup base that did not require meat,{' '}
+              <a href="https://en.wikipedia.org/wiki/Dashi" target="_blank" rel="noreferrer">dashi</a>{' '}
+              is an ancient Japanese soup stock which forms the base of miso soups and many noodle soups.
+              One of the core ingredients of dashi is kombu (<em>Saccharina japonica</em>), a type of
+              macro-algae seaweed. Like any soup stock, after the stock is developed the biomass used
+              to create it is considered waste. However, this biomass still holds rich carbon — which
+              can be valorized and sequestered.
             </p>
             <p>
               We see this not as a problem to solve, but as a system to redesign.
-              Brine + Ember exists to prove that the highest-margin food product and
-              the most rigorous climate product can come from the same single supply chain.
+              Brine + Ember exists to prove that a premium, small-batch food product and
+              a rigorous climate product can come from the same single supply chain.
             </p>
           </Reveal>
 

@@ -6,7 +6,7 @@ const steps = [
     label: 'Source',
     title: 'Premium Japanese Kelp',
     img: '/images/kelp-underwater.jpg',
-    body: 'Direct relationships with Japanese kelp harvesters secure Michelin-grade kombu. Provenance, quality, and supply continuity are locked in at the source.',
+    body: 'Direct relationships with Japanese kelp harvesters secure premium, small-batch kombu. Provenance, quality, and supply continuity are locked in at the source.',
     tints: ['var(--teal)', 'var(--amber)'],
   },
   {
@@ -14,7 +14,7 @@ const steps = [
     label: 'Produce',
     title: 'The Brine — Dashi',
     img: '/images/dashi-bowl.jpg',
-    body: 'The most prized portion of the kelp becomes our premium dashi — a pantry staple with high-umami depth and authentic Japanese sourcing.',
+    body: 'The most prized portion of the kelp becomes our boutique, artisan dashi — a pantry staple with high-umami depth and authentic Japanese sourcing.',
     tints: ['var(--amber)', '#f0c089'],
   },
   {
@@ -30,7 +30,7 @@ const steps = [
     label: 'Sequester',
     title: 'Deep-Sea Carbon Lock',
     img: '/images/charcoal.jpg',
-    body: 'A portion of every sale funds ocean reforestation — kelp cultivation and abyssal-plain biomass sinking, with dMRV-verified sequestration claims.',
+    body: 'A portion of every sale funds research into ocean reforestation — kelp cultivation and abyssal-plain biomass sinking, alongside the viability, scaling, and eco-system impacts that go with it.',
     tints: ['var(--teal-deep)', 'var(--magenta)'],
   },
   {
@@ -38,7 +38,7 @@ const steps = [
     label: 'Distribute',
     title: 'Global Bridge',
     img: '/images/shipping.jpg',
-    body: 'ISO-grade quality control and 15+ years of international logistics experience move the product to U.S. retail — Whole Foods, Publix, and direct.',
+    body: 'ISO-grade quality control and 15+ years of international logistics experience move the product to specialty and boutique retail across the U.S.',
     tints: ['var(--magenta)', '#4a5b80'],
   },
 ]
@@ -88,12 +88,12 @@ export default function Process() {
       <section className="section section-dmrv">
         <div className="container">
           <Reveal>
-            <span className="eyebrow">dMRV — Trust at Every Step</span>
-            <h2>Digital Monitoring, Reporting &amp; Verification.</h2>
+            <span className="eyebrow">Transparency at Every Step</span>
+            <h2>Connecting consumer to impact.</h2>
             <p className="lead">
-              Every sequestration claim is scientifically defensible and investor-grade.
-              Trace-Your-Impact QR codes connect a single jar of dashi to the verified
-              carbon outcomes it helped fund.
+              Trace-Your-Impact QR codes connect a single jar of dashi to the carbon outcomes
+              it helped fund — so the person at the table can see what their purchase put in
+              the soil and the sea.
             </p>
           </Reveal>
 

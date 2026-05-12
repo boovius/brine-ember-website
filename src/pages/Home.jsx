@@ -16,8 +16,8 @@ export default function Home() {
             <span className="eyebrow">Climate-Forward Food · Seed Round</span>
           </div>
           <h1 className="hero-title">
-            From the <em>Brine</em> of the ocean<br/>
-            to the <em>Ember</em> of the soil.
+            From the <em>Brine</em> of the sea<br/>
+            to <em>Ember</em> of life.
           </h1>
           <p className="hero-sub">
             A circular food &amp; climate company transforming Japanese kelp into premium
@@ -89,7 +89,7 @@ export default function Home() {
             <div className="loop-node loop-node-2">
               <span className="loop-label small">Step 02</span>
               <h3>Produce The Brine</h3>
-              <p>Michelin-grade dashi crafted from the most prized portion of the kelp.</p>
+              <p>Small-batch, artisan dashi crafted from the most prized portion of the kelp.</p>
             </div>
             <div className="loop-node loop-node-3">
               <span className="loop-label small">Step 03</span>
@@ -129,7 +129,7 @@ export default function Home() {
               <div className="product-body">
                 <span className="small">Product 01</span>
                 <h3>The Brine — Premium Dashi</h3>
-                <p>Michelin-grade Japanese kelp, sourced through direct harvester relationships and positioned for premium Florida retail.</p>
+                <p>Premium, small-batch, boutique, artisan Japanese kelp — sourced through direct harvester relationships and crafted for the most discerning kitchens.</p>
                 <ul className="ticks">
                   <li>High-umami, authentically sourced dashi</li>
                   <li>Taps the $40B+ global functional food market</li>
@@ -165,12 +165,13 @@ export default function Home() {
             <span className="eyebrow">The Legacy Play</span>
             <h2>Deep-Sea Sequestration.</h2>
             <p className="lead">
-              A portion of every sale funds Ocean Reforestation — cultivating kelp forests and sinking
+              A portion of every sale funds ocean reforestation — cultivating kelp forests and sinking
               biomass to the abyssal plain, where carbon is locked away for centuries.
             </p>
             <p>
-              We apply dMRV standards (Digital Monitoring, Reporting &amp; Verification) to ensure every
-              sequestration claim is scientifically defensible and investor-grade.
+              We&rsquo;re funding research into the viability, scaling, and eco-system impacts of
+              ocean-based sequestration — so that what we put in the water is grounded in science
+              and shaped by what it does to the places it touches.
             </p>
           </Reveal>
         </div>
@@ -183,8 +184,8 @@ export default function Home() {
             <span className="eyebrow">The Ask &amp; Path to Market</span>
             <h2>Three moves. One launch.</h2>
             <p className="lead" style={{ maxWidth: '62ch' }}>
-              We are raising to secure the Japanese harvest, pilot biochar conversion, and launch
-              into the Florida market through Whole Foods and Publix.
+              We are raising to secure the Japanese harvest, pilot biochar conversion, and bring our
+              premium, small-batch dashi to specialty retail.
             </p>
           </Reveal>
 
@@ -201,8 +202,8 @@ export default function Home() {
             </Reveal>
             <Reveal className="card" delay={200}>
               <span className="num">03</span>
-              <h3>Florida Launch</h3>
-              <p>Retail debut in Whole Foods &amp; Publix with full dMRV-backed sequestration reporting.</p>
+              <h3>Retail Launch</h3>
+              <p>Specialty and boutique retail debut, with transparent sequestration reporting tied to every jar.</p>
             </Reveal>
           </div>
 

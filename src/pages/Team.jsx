@@ -12,10 +12,10 @@ export default function Team() {
           <span className="eyebrow">The Founders</span>
           <h1>Two operators. One closed loop.</h1>
           <p className="lead">
-            Brine + Ember is led by a scientist with climate-policy credibility and a
-            generalist operator who&rsquo;s shipped product in film, politics, and early-stage
-            tech. The combination is intentional — sequestration is only as valuable as
-            the supply chain and the story that carry it to market.
+            Brine + Ember is led by a technical product builder and a climate
+            business-development operator. The combination is intentional —
+            sequestration is only as valuable as the supply chain and the story
+            that carry it to market.
           </p>
         </div>
       </section>
@@ -24,15 +24,53 @@ export default function Team() {
         <div className="container">
           <Reveal className="founder">
             <div className="founder-portrait" aria-hidden="true">
+              <div className="founder-portrait-inner founder-portrait-amber">
+                <span className="founder-initial">J</span>
+              </div>
+              <div className="founder-portrait-frame" />
+            </div>
+            <div className="founder-body">
+              <span className="small">Co-Founder · Technical Product &amp; Strategy</span>
+              <h2>Josh Book</h2>
+              <p className="founder-role">The Synergizer</p>
+              <p className="lead">
+                Technical builder and complex systems thinker connecting people,
+                ideas, and regenerative climate solutions.
+              </p>
+
+              <div className="founder-credentials">
+                <div>
+                  <span className="num">01</span>
+                  <h4>NYU BFA</h4>
+                  <p>A foundation in storytelling, systems thinking, and cross-disciplinary craft.</p>
+                </div>
+                <div>
+                  <span className="num">02</span>
+                  <h4>Technical Founder of Cerca</h4>
+                  <p>Built and shipped a consumer product from the ground up — design, code, and operations.</p>
+                </div>
+                <div>
+                  <span className="num">03</span>
+                  <h4>Technical Product Consultant</h4>
+                  <p>Helps early-stage teams turn complex visions into executed product outcomes.</p>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+
+          <div className="divider" style={{ margin: '5rem 0' }} />
+
+          <Reveal className="founder founder-flip" delay={100}>
+            <div className="founder-portrait" aria-hidden="true">
               <div className="founder-portrait-inner">
                 <span className="founder-initial">M</span>
               </div>
               <div className="founder-portrait-frame" />
             </div>
             <div className="founder-body">
-              <span className="small">Co-Founder</span>
+              <span className="small">Co-Founder · Climate Business Development</span>
               <h2>Marielle Fillit</h2>
-              <p className="founder-role">The Visioneer</p>
+              <p className="founder-role">The Do-er</p>
               <p className="lead">
                 Marielle brings the scientific rigor and institutional credibility to
                 anchor Brine + Ember&rsquo;s sequestration claims and climate framework.
@@ -57,33 +95,6 @@ export default function Team() {
               </div>
             </div>
           </Reveal>
-
-          <div className="divider" style={{ margin: '5rem 0' }} />
-
-          <Reveal className="founder founder-flip" delay={100}>
-            <div className="founder-portrait" aria-hidden="true">
-              <div className="founder-portrait-inner founder-portrait-amber">
-                <span className="founder-initial">J</span>
-              </div>
-              <div className="founder-portrait-frame" />
-            </div>
-            <div className="founder-body">
-              <span className="small">Co-Founder · Product &amp; Strategy</span>
-              <h2>Josh Book</h2>
-              <p className="founder-role">The Agile Operator</p>
-              <p className="lead">
-                A high-bandwidth generalist whose career spans film, political organizing,
-                and early-stage technology — unified by a talent for turning complex
-                visions into executed outcomes.
-              </p>
-
-              <ul className="ticks" style={{ marginTop: '1.6rem' }}>
-                <li>Built a consumer travel platform from the ground up</li>
-                <li>Led product development across agile, cross-functional teams</li>
-                <li>Specializes in sustainability systems design and climate communication</li>
-              </ul>
-            </div>
-          </Reveal>
         </div>
       </section>
 
@@ -91,7 +102,7 @@ export default function Team() {
         <div className="container center">
           <Reveal>
             <p className="big-quote">
-              &ldquo;From the Brine of the ocean to the Ember of the soil.&rdquo;
+              &ldquo;From the Brine of the sea to Ember of life.&rdquo;
             </p>
           </Reveal>
         </div>

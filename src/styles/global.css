@@ -9,10 +9,10 @@
   --ink-faint: #6d6a63;
   --rule: #1c1c24;
 
-  --magenta: #e91ea9;
-  --magenta-bright: #ff3dc8;
-  --magenta-soft: rgba(233, 30, 169, 0.18);
-  --magenta-glow: 0 0 36px rgba(255, 61, 200, 0.35);
+  --magenta: #00c75e;
+  --magenta-bright: #1fe575;
+  --magenta-soft: rgba(0, 199, 94, 0.18);
+  --magenta-glow: 0 0 36px rgba(31, 229, 117, 0.35);
 
   --amber: #d99548;
   --amber-deep: #8a5a1e;

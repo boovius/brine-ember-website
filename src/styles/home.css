@@ -39,7 +39,7 @@
 }
 .hero-title em {
   font-style: italic;
-  background: linear-gradient(90deg, var(--magenta-bright), #ffa6e0);
+  background: linear-gradient(90deg, var(--magenta-bright), #9ff5c4);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
