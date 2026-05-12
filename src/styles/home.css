@@ -37,12 +37,22 @@
   margin: 0 0 1.6rem;
   max-width: 18ch;
 }
-.hero-title em {
+.hero-title .word-brine,
+.hero-title .word-ember,
+.hero-title .word-life {
   font-style: normal;
-  background: linear-gradient(90deg, var(--magenta-bright), #9ff5c4);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+.hero-title .word-brine {
+  background-image: linear-gradient(90deg, #3a6f86 0%, #5a93ad 60%, #7eb5c8 100%);
+}
+.hero-title .word-ember {
+  background-image: linear-gradient(90deg, #ff4a1c 0%, #ff7a2a 55%, #ffb347 100%);
+}
+.hero-title .word-life {
+  background-image: linear-gradient(90deg, var(--magenta-bright), #9ff5c4);
 }
 .hero-sub {
   font-size: clamp(1.05rem, 1.6vw, 1.25rem);

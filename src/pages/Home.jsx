@@ -16,8 +16,8 @@ export default function Home() {
             <span className="eyebrow">Climate-Forward Food · Seed Round</span>
           </div>
           <h1 className="hero-title">
-            From the <em>Brine</em> of the sea<br/>
-            to <em>Ember</em> of life.
+            From the <span className="word-brine">Brine</span> of the sea<br/>
+            to the <span className="word-ember">Ember</span> of <span className="word-life">life</span>.
           </h1>
           <p className="hero-sub">
             A circular food &amp; climate company transforming Japanese kelp into premium

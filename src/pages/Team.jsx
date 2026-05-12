@@ -102,7 +102,7 @@ export default function Team() {
         <div className="container center">
           <Reveal>
             <p className="big-quote">
-              &ldquo;From the Brine of the sea to Ember of life.&rdquo;
+              &ldquo;From the Brine of the sea to the Ember of life.&rdquo;
             </p>
           </Reveal>
         </div>

@@ -1,28 +1,6 @@
-import { useState } from 'react'
 import Reveal from '../components/Reveal.jsx'
 
 export default function Contact() {
-  const [status, setStatus] = useState(null)
-  const [form, setForm] = useState({ name: '', email: '', reason: 'General', message: '' })
-
-  function update(k, v) {
-    setForm(prev => ({ ...prev, [k]: v }))
-  }
-
-  function submit(e) {
-    e.preventDefault()
-    if (!form.email.trim() || !form.message.trim()) {
-      setStatus({ kind: 'error', text: 'Please add an email and a short message.' })
-      return
-    }
-    const subject = encodeURIComponent(`[Brine + Ember · ${form.reason}] ${form.name || 'New inquiry'}`)
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nReason: ${form.reason}\n\n${form.message}`
-    )
-    window.location.href = `mailto:josh@brineandember.earth?subject=${subject}&body=${body}`
-    setStatus({ kind: 'ok', text: 'Opening your email client…' })
-  }
-
   return (
     <div className="page">
       <section className="page-hero">
@@ -41,68 +19,22 @@ export default function Contact() {
       </section>
 
       <section className="section">
-        <div className="container contact-grid">
+        <div className="container contact-single">
           <Reveal>
             <h4>Direct</h4>
             <h2>Reach out.</h2>
-            <p>
-              For general inquiries, partnerships, or press, the founders read every message.
+            <p className="lead">
+              For general inquiries, partnerships, investment, or press — drop a note.
+              The founders read every message.
             </p>
 
-            <ul className="contact-list">
-              <li>
-                <span className="small">General · Investors · Retail · Partners</span>
-                <a href="mailto:josh@brineandember.earth">josh@brineandember.earth</a>
-              </li>
-            </ul>
-          </Reveal>
+            <a href="mailto:josh@brineandember.earth" className="contact-email-link">
+              josh@brineandember.earth
+            </a>
 
-          <Reveal delay={120}>
-            <form className="contact-form" onSubmit={submit} noValidate>
-              <label>
-                <span>Name</span>
-                <input
-                  type="text"
-                  value={form.name}
-                  onChange={e => update('name', e.target.value)}
-                  placeholder="Your name"
-                />
-              </label>
-              <label>
-                <span>Email</span>
-                <input
-                  type="email"
-                  required
-                  value={form.email}
-                  onChange={e => update('email', e.target.value)}
-                  placeholder="you@company.com"
-                />
-              </label>
-              <label>
-                <span>Reason</span>
-                <select value={form.reason} onChange={e => update('reason', e.target.value)}>
-                  <option>General</option>
-                  <option>Investor Inquiry</option>
-                  <option>Retail / Wholesale</option>
-                  <option>Agricultural Partnership</option>
-                  <option>Press</option>
-                </select>
-              </label>
-              <label>
-                <span>Message</span>
-                <textarea
-                  rows="5"
-                  required
-                  value={form.message}
-                  onChange={e => update('message', e.target.value)}
-                  placeholder="Tell us a bit about yourself…"
-                />
-              </label>
-              {status && (
-                <p className={`form-status ${status.kind}`}>{status.text}</p>
-              )}
-              <button type="submit" className="btn">Send Message</button>
-            </form>
+            <p className="muted small" style={{ marginTop: '1.5rem' }}>
+              General · Investors · Retail · Agricultural Partners · Press
+            </p>
           </Reveal>
         </div>
       </section>

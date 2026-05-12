@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-tag">
           <p className="quote">
-            "From the Brine of the sea to Ember of life."
+            "From the Brine of the sea to the Ember of life."
           </p>
         </div>
 
