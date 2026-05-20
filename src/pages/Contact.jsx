@@ -12,8 +12,8 @@ export default function Contact() {
           <span className="eyebrow">Contact</span>
           <h1>Let&rsquo;s close the loop, together.</h1>
           <p className="lead">
-            Whether you&rsquo;re a retailer, investor, agricultural partner, or curious diner —
-            we want to hear from you.
+            Whether you&rsquo;re a retailer, a seaweed farmer, a dashi producer, a researcher,
+            or a curious eater — we want to hear from you.
           </p>
         </div>
       </section>
@@ -24,8 +24,8 @@ export default function Contact() {
             <h4>Direct</h4>
             <h2>Reach out.</h2>
             <p className="lead">
-              For general inquiries, partnerships, investment, or press — drop a note.
-              The founders read every message.
+              For general inquiries, partnerships, R&amp;D collaboration, or press —
+              drop a note. The founders read every message.
             </p>
 
             <a href="mailto:josh@brineandember.earth" className="contact-email-link">
@@ -33,7 +33,7 @@ export default function Contact() {
             </a>
 
             <p className="muted small" style={{ marginTop: '1.5rem' }}>
-              General · Investors · Retail · Agricultural Partners · Press
+              General · Retail · Seaweed Farmers · Dashi Producers · Researchers · Press
             </p>
           </Reveal>
         </div>

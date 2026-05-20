@@ -1,6 +1,34 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal.jsx'
 
+const goals = [
+  {
+    n: '01',
+    title: 'Valorize the waste',
+    body: 'Capture and sequester the carbon in waste seaweed from dashi production by converting it into agricultural biochar.',
+  },
+  {
+    n: '02',
+    title: 'Grow Western seaweed',
+    body: 'Help build the seaweed industry in the global West — the U.S., Canada, and Europe — alongside farmers already in the water.',
+  },
+  {
+    n: '03',
+    title: 'Educate the eater',
+    body: 'Make the link between seaweed and climate-change reversal legible to the everyday consumer.',
+  },
+  {
+    n: '04',
+    title: 'Support the science',
+    body: 'Back the R&D efforts exploring seaweed sinking — its viability, scaling, and eco-system impacts.',
+  },
+  {
+    n: '05',
+    title: 'Eat well, eat lightly',
+    body: 'Help people eat in a way that is healthy, delicious, and genuinely sustainable.',
+  },
+]
+
 export default function Home() {
   return (
     <div className="page">
@@ -13,16 +41,16 @@ export default function Home() {
 
         <div className="container hero-inner">
           <div className="hero-eyebrow">
-            <span className="eyebrow">Climate-Forward Food · Seed Round</span>
+            <span className="eyebrow">Circular Seaweed · Climate-Forward Food</span>
           </div>
           <h1 className="hero-title">
             From the <span className="word-brine">Brine</span> of the sea<br/>
             to the <span className="word-ember">Ember</span> of <span className="word-life">life</span>.
           </h1>
           <p className="hero-sub">
-            A circular food &amp; climate company transforming Japanese kelp into premium
-            culinary products, agricultural biochar, and deep-sea carbon sinks —
-            all from a single harvest.
+            A circular food &amp; climate company partnering with Japanese dashi producers
+            and North American seaweed farmers — turning waste seaweed into agricultural
+            biochar, a premium dashi product, and durable carbon sequestration.
           </p>
           <div className="hero-cta">
             <Link to="/process" className="btn">Explore the Process</Link>
@@ -40,8 +68,8 @@ export default function Home() {
       <section id="crises" className="section section-crises">
         <div className="container">
           <Reveal>
-            <span className="eyebrow">Three Crises · One Circular Solution</span>
-            <h2>One harvest, three planetary problems addressed.</h2>
+            <span className="eyebrow">Three Crises · One Circular Idea</span>
+            <h2>One overlooked ingredient, three planetary problems addressed.</h2>
             <p className="lead" style={{ maxWidth: '60ch' }}>
               We sit at the intersection of food, agriculture, and climate — converting
               waste into yield and yield into sequestration.
@@ -52,7 +80,7 @@ export default function Home() {
             <Reveal className="card">
               <span className="num">01</span>
               <h3>Food Waste</h3>
-              <p>30%+ of harvested seaweed is discarded during Dashi processing — premium biomass treated as trash.</p>
+              <p>30%+ of the seaweed used in dashi production is discarded once the stock has been drawn — premium biomass treated as trash.</p>
             </Reveal>
             <Reveal className="card" delay={100}>
               <span className="num">02</span>
@@ -62,7 +90,7 @@ export default function Home() {
             <Reveal className="card" delay={200}>
               <span className="num">03</span>
               <h3>The Carbon Gap</h3>
-              <p>Achieving Net Zero demands massive, verifiable sequestration — and nature-based solutions are critically underfunded.</p>
+              <p>Reversing climate change demands massive, verifiable sequestration — and nature-based, ocean-linked solutions are critically underfunded.</p>
             </Reveal>
           </div>
         </div>
@@ -75,7 +103,7 @@ export default function Home() {
         <div className="container">
           <div className="circular-head">
             <Reveal>
-              <span className="eyebrow">The Kelp Circularity</span>
+              <span className="eyebrow">The Seaweed Circularity</span>
               <h2>Every step creates value.<br/>Nothing is wasted. Everything compounds.</h2>
             </Reveal>
           </div>
@@ -83,23 +111,23 @@ export default function Home() {
           <div className="circular-loop">
             <div className="loop-node loop-node-1">
               <span className="loop-label small">Step 01</span>
-              <h3>Source Premium Kelp</h3>
-              <p>Direct relationships with Japanese kelp harvesters ensure quality and traceability.</p>
+              <h3>Partner at the Source</h3>
+              <p>Working alongside Japanese dashi producers and North American seaweed farmers — not as a buyer of raw seaweed, but as a partner in what to do with what gets left behind.</p>
             </div>
             <div className="loop-node loop-node-2">
               <span className="loop-label small">Step 02</span>
               <h3>Produce The Brine</h3>
-              <p>Small-batch, artisan dashi crafted from the most prized portion of the kelp.</p>
+              <p>Our custom premium dashi, crafted for higher-end grocery shelves where sustainability is treated as a value worth choosing.</p>
             </div>
             <div className="loop-node loop-node-3">
               <span className="loop-label small">Step 03</span>
               <h3>Upcycle Into Ember</h3>
-              <p>Processing waste is converted into high-quality biochar — &ldquo;black gold&rdquo; for soils.</p>
+              <p>The waste seaweed from dashi production is converted into high-quality biochar — &ldquo;black gold&rdquo; for soils.</p>
             </div>
             <div className="loop-node loop-node-4">
               <span className="loop-label small">Step 04</span>
-              <h3>Protect Oceans &amp; Carbon</h3>
-              <p>A portion of every sale funds kelp reforestation and abyssal-plain sequestration.</p>
+              <h3>Grow the Western Industry</h3>
+              <p>A portion of every sale supports the seaweed industry in the global West and the R&amp;D community exploring seaweed sinking.</p>
             </div>
             <div className="loop-orb" aria-hidden="true">
               <span>The<br/>Loop</span>
@@ -117,7 +145,7 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <Reveal>
-            <span className="eyebrow">Two Products · One Harvest</span>
+            <span className="eyebrow">Two Products · One Loop</span>
             <h2>The Brine. The Ember.</h2>
           </Reveal>
 
@@ -129,11 +157,14 @@ export default function Home() {
               <div className="product-body">
                 <span className="small">Product 01</span>
                 <h3>The Brine — Premium Dashi</h3>
-                <p>Premium, small-batch, boutique, artisan Japanese kelp — sourced through direct harvester relationships and crafted for the most discerning kitchens.</p>
+                <p>
+                  Our custom premium dashi, built for higher-end grocery stores and the
+                  consumer who treats sustainability as a value worth a remunerative choice.
+                </p>
                 <ul className="ticks">
-                  <li>High-umami, authentically sourced dashi</li>
-                  <li>Taps the $40B+ global functional food market</li>
-                  <li>&ldquo;Trace-Your-Impact&rdquo; QR code linking purchase to sequestration data</li>
+                  <li>High-umami, authentically rooted in the Japanese tradition</li>
+                  <li>Designed for the home cook who reads labels and asks where things come from</li>
+                  <li>&ldquo;Trace-Your-Impact&rdquo; QR code linking each jar to the climate outcomes it helped fund</li>
                 </ul>
               </div>
             </Reveal>
@@ -145,7 +176,7 @@ export default function Home() {
               <div className="product-body">
                 <span className="small">Product 02</span>
                 <h3>The Ember — Agricultural Biochar</h3>
-                <p>Processing waste from dashi production is converted into high-quality biochar — &ldquo;Black Gold&rdquo; for agricultural markets.</p>
+                <p>Waste seaweed from dashi production is converted into high-quality biochar — &ldquo;Black Gold&rdquo; for agricultural soils.</p>
                 <ul className="ticks">
                   <li>Dramatic increase in soil water retention</li>
                   <li>Reduces reliance on synthetic fertilizers</li>
@@ -157,54 +188,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DEEP-SEA / LEGACY */}
+      {/* DEEP-SEA / R&D */}
       <section className="section section-legacy">
         <div className="legacy-bg" aria-hidden="true" />
         <div className="container legacy-inner">
           <Reveal>
-            <span className="eyebrow">The Legacy Play</span>
+            <span className="eyebrow">Supporting the Science</span>
             <h2>Deep-Sea Sequestration.</h2>
             <p className="lead">
-              A portion of every sale funds ocean reforestation — cultivating kelp forests and sinking
-              biomass to the abyssal plain, where carbon is locked away for centuries.
+              Sinking biomass to the abyssal plain — where carbon can be locked away for
+              centuries — is one of the most promising and least understood levers in the
+              ocean&rsquo;s climate toolkit.
             </p>
             <p>
-              We&rsquo;re funding research into the viability, scaling, and eco-system impacts of
-              ocean-based sequestration — so that what we put in the water is grounded in science
-              and shaped by what it does to the places it touches.
+              We&rsquo;re backing the R&amp;D community exploring its viability, scaling,
+              and eco-system impacts. What we put in the water has to be grounded in
+              science and shaped by what it does to the places it touches.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* PATH TO MARKET */}
+      {/* VISION + FIVE GOALS */}
       <section className="section">
         <div className="container">
           <Reveal>
-            <span className="eyebrow">The Ask &amp; Path to Market</span>
-            <h2>Three moves. One launch.</h2>
+            <span className="eyebrow">Our Vision</span>
+            <h2>Reverse climate change by promoting carbon sequestration through seaweed.</h2>
             <p className="lead" style={{ maxWidth: '62ch' }}>
-              We are raising to secure the Japanese harvest, pilot biochar conversion, and bring our
-              premium, small-batch dashi to specialty retail.
+              Five concrete goals shape how we move toward it.
             </p>
           </Reveal>
 
           <div className="grid grid-3" style={{ marginTop: '3rem' }}>
-            <Reveal className="card">
-              <span className="num">01</span>
-              <h3>Secure Supply</h3>
-              <p>Lock direct harvest contracts with Japanese kelp partners.</p>
-            </Reveal>
-            <Reveal className="card" delay={100}>
-              <span className="num">02</span>
-              <h3>Pilot Biochar</h3>
-              <p>Validate conversion and establish agricultural offtake relationships.</p>
-            </Reveal>
-            <Reveal className="card" delay={200}>
-              <span className="num">03</span>
-              <h3>Retail Launch</h3>
-              <p>Specialty and boutique retail debut, with transparent sequestration reporting tied to every jar.</p>
-            </Reveal>
+            {goals.map((g, i) => (
+              <Reveal className="card" delay={i * 80} key={g.n}>
+                <span className="num">{g.n}</span>
+                <h3>{g.title}</h3>
+                <p>{g.body}</p>
+              </Reveal>
+            ))}
           </div>
 
           <div className="center" style={{ marginTop: '3rem' }}>

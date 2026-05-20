@@ -36,6 +36,32 @@
 }
 @media (max-width: 820px) { .about-grid { grid-template-columns: 1fr; } }
 .about-economics { max-width: 68ch; }
+.goal-list {
+  list-style: none;
+  counter-reset: goal;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  gap: .9rem;
+}
+.goal-list li {
+  position: relative;
+  padding: 0 0 0 3rem;
+  counter-increment: goal;
+  color: var(--ink-dim);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.goal-list li::before {
+  content: counter(goal, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: .1em;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--magenta-bright);
+  letter-spacing: .05em;
+}
 
 /* Process timeline */
 .timeline {

@@ -3,18 +3,18 @@ import Reveal from '../components/Reveal.jsx'
 const steps = [
   {
     n: '01',
-    label: 'Source',
-    title: 'Premium Japanese Kelp',
+    label: 'Partner',
+    title: 'Producers & Farmers',
     img: '/images/kelp-underwater.jpg',
-    body: 'Direct relationships with Japanese kelp harvesters secure premium, small-batch kombu. Provenance, quality, and supply continuity are locked in at the source.',
+    body: 'We work with Japanese dashi producers and North American seaweed farmers — not as a buyer of raw seaweed, but as a partner investigating circular pathways for the waste seaweed left behind after dashi is drawn.',
     tints: ['var(--teal)', 'var(--amber)'],
   },
   {
     n: '02',
     label: 'Produce',
-    title: 'The Brine — Dashi',
+    title: 'The Brine — Custom Premium Dashi',
     img: '/images/dashi-bowl.jpg',
-    body: 'The most prized portion of the kelp becomes our boutique, artisan dashi — a pantry staple with high-umami depth and authentic Japanese sourcing.',
+    body: 'A custom premium dashi product, built for higher-end grocery stores and the consumer who treats sustainability as a value worth a remunerative choice.',
     tints: ['var(--amber)', '#f0c089'],
   },
   {
@@ -22,23 +22,23 @@ const steps = [
     label: 'Upcycle',
     title: 'The Ember — Biochar',
     img: '/images/biochar-producer.jpg',
-    body: 'The 30%+ of kelp biomass normally discarded is pyrolyzed into agricultural-grade biochar — "black gold" for soils, water retention, and a 1,000-year carbon lock.',
+    body: 'The 30%+ of seaweed biomass normally discarded after dashi production is pyrolyzed into agricultural-grade biochar — "black gold" for soils, water retention, and a 1,000-year carbon lock.',
     tints: ['#3a2618', '#7a4a26'],
   },
   {
     n: '04',
-    label: 'Sequester',
-    title: 'Deep-Sea Carbon Lock',
+    label: 'Support',
+    title: 'R&D into Seaweed Sinking',
     img: '/images/charcoal.jpg',
-    body: 'A portion of every sale funds research into ocean reforestation — kelp cultivation and abyssal-plain biomass sinking, alongside the viability, scaling, and eco-system impacts that go with it.',
+    body: 'A portion of every sale supports the R&D community investigating seaweed sinking — its viability, scaling, and the eco-system impacts that come with putting biomass into the deep ocean.',
     tints: ['var(--teal-deep)', 'var(--magenta)'],
   },
   {
     n: '05',
     label: 'Distribute',
-    title: 'Global Bridge',
+    title: 'Higher-End Grocery',
     img: '/images/shipping.jpg',
-    body: 'ISO-grade quality control and 15+ years of international logistics experience move the product to specialty and boutique retail across the U.S.',
+    body: 'The dashi is built for higher-end grocery stores in the U.S., Canada, and Europe — for the consumer who treats sustainability as a value worth choosing.',
     tints: ['var(--magenta)', '#4a5b80'],
   },
 ]
@@ -53,12 +53,11 @@ export default function Process() {
         </div>
         <div className="container page-hero-inner">
           <span className="eyebrow">The Process</span>
-          <h1>One harvest. Five outcomes.</h1>
+          <h1>One overlooked ingredient. Five outcomes.</h1>
           <p className="lead">
-            From a single kelp harvest off the coast of Japan, we produce a premium
-            culinary product, an agricultural soil amendment, a deep-sea carbon sink,
-            and verifiable climate data — distributed through a regulated global
-            supply chain. Here&rsquo;s how.
+            Starting from the waste seaweed left behind after dashi production, we make a
+            premium dashi product, an agricultural soil amendment, support for seaweed-sinking
+            R&amp;D, and a story consumers can actually follow. Here&rsquo;s how.
           </p>
         </div>
       </section>

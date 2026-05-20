@@ -14,9 +14,9 @@ export default function About() {
           <h1>A company built around a loop, not a line.</h1>
           <p className="lead">
             Most food brands end at the plate. Most climate companies end at the offset.
-            We close the gap — and the loop — by treating a single Japanese kelp harvest
-            as raw material for three intertwined outcomes: nourishment, soil restoration,
-            and durable carbon sequestration.
+            We close the gap — and the loop — by treating waste seaweed from dashi
+            production as raw material for three intertwined outcomes: nourishment,
+            soil restoration, and durable carbon sequestration.
           </p>
         </div>
       </section>
@@ -37,22 +37,24 @@ export default function About() {
             </p>
             <p>
               We see this not as a problem to solve, but as a system to redesign.
-              Brine + Ember exists to prove that a premium, small-batch food product and
-              a rigorous climate product can come from the same single supply chain.
+              Brine + Ember exists to show that a premium dashi and a rigorous climate
+              product can come from the same loop — and that the loop itself can help
+              grow the Western seaweed industry along the way.
             </p>
           </Reveal>
 
           <Reveal delay={120}>
             <h4>Vision</h4>
-            <h2>Every product sold becomes a node in planetary infrastructure.</h2>
+            <h2>Reverse climate change by promoting carbon sequestration through seaweed.</h2>
             <p>
               A pantry staple should be able to tell you what it has restored.
-              Every jar of our dashi carries a QR code linking the purchase to verified
-              sequestration data — turning a kitchen ingredient into measurable climate action.
+              Every jar of our dashi carries a QR code linking the purchase to the climate
+              outcomes it helped fund — turning a kitchen ingredient into measurable
+              climate action.
             </p>
             <p>
-              As retail dashi volume grows, biochar output and ocean sequestration scale
-              proportionally. No additional capital required per unit. The loop is the moat.
+              As dashi volume grows, upcycled biochar and support for seaweed-sinking
+              R&amp;D scale alongside it. The loop is the point.
             </p>
           </Reveal>
         </div>
@@ -63,25 +65,25 @@ export default function About() {
       <section className="section">
         <div className="container">
           <Reveal>
-            <span className="eyebrow">Operations · The Global Bridge</span>
-            <h2>Built for the cross-border, regulated, science-grade reality of climate-tier food.</h2>
+            <span className="eyebrow">Relationships · The Global Bridge</span>
+            <h2>Built around the people already doing the work.</h2>
           </Reveal>
 
           <div className="grid grid-3" style={{ marginTop: '3rem' }}>
             <Reveal className="card">
               <span className="num">01</span>
-              <h3>Direct Sourcing</h3>
-              <p>Longstanding relationships with Japanese kelp harvesters ensure supply quality, traceability, and preferential access.</p>
+              <h3>Japanese Dashi Producers</h3>
+              <p>Building relationships with the dashi producers whose waste seaweed we valorize — partners in the loop, not suppliers we transact with.</p>
             </Reveal>
             <Reveal className="card" delay={100}>
               <span className="num">02</span>
-              <h3>Supply Chain Mastery</h3>
-              <p>15+ years of international logistics experience underpin our customs navigation, cold-chain management, and cross-border compliance.</p>
+              <h3>North American Seaweed Farmers</h3>
+              <p>Working alongside the farmers already in the water to help grow the seaweed industry across the U.S., Canada, and Europe.</p>
             </Reveal>
             <Reveal className="card" delay={200}>
               <span className="num">03</span>
-              <h3>ISO-Grade Quality Control</h3>
-              <p>Dual-standard QC protocols for food-grade dashi and agricultural-grade biochar — built for regulatory confidence at every channel.</p>
+              <h3>Research &amp; Development</h3>
+              <p>Supporting the R&amp;D community exploring seaweed sinking — its viability, scaling, and eco-system impacts.</p>
             </Reveal>
           </div>
         </div>
@@ -90,16 +92,20 @@ export default function About() {
       <section className="section">
         <div className="container about-economics">
           <Reveal>
-            <span className="eyebrow">Market &amp; Unit Economics</span>
+            <span className="eyebrow">Our Five Goals</span>
             <h2>A self-reinforcing model.</h2>
             <p className="lead">
-              High-margin retail dashi subsidizes our downstream climate operations.
-              As dashi volume grows, upcycled biochar and verified sequestration scale
-              automatically — no additional capital required per unit.
+              Five goals organize what we do — and how each piece of the loop earns its keep:
             </p>
+            <ol className="goal-list">
+              <li>Valorize and sequester carbon in waste seaweed from dashi production by converting it into biochar.</li>
+              <li>Grow the seaweed industry in the global West — the U.S., Canada, and Europe.</li>
+              <li>Educate consumers about the link between seaweed and climate-change reversal.</li>
+              <li>Support R&amp;D efforts relating to seaweed sinking.</li>
+              <li>Facilitate people eating healthy, delicious, and sustainably.</li>
+            </ol>
             <p>
-              Every new retail customer becomes a node in our climate infrastructure —
-              purchasing premium food and funding planetary-scale sequestration simultaneously.
+              Every jar of our dashi sold pushes each of these forward at the same time.
             </p>
             <div style={{ marginTop: '2rem' }}>
               <Link to="/process" className="btn">See the Full Process</Link>

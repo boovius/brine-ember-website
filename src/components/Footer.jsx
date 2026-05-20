@@ -40,7 +40,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span className="muted small">© {new Date().getFullYear()} Brine + Ember</span>
-          <span className="muted small">Climate-Forward Food · Seed Round</span>
+          <span className="muted small">Circular Seaweed · Climate-Forward Food</span>
         </div>
       </div>
     </footer>
