@@ -5,9 +5,10 @@ const steps = [
     n: '01',
     label: 'Partner',
     title: 'Producers & Farmers',
-    img: '/images/kelp-underwater.jpg',
+    img: '/images/dashi-factory-waste.png',
+    isIllustration: true,
     body: 'We work with Japanese dashi producers and North American seaweed farmers — not as a buyer of raw seaweed, but as a partner investigating circular pathways for the waste seaweed left behind after dashi is drawn.',
-    tints: ['var(--teal)', 'var(--amber)'],
+    tint: 'var(--teal)',
   },
   {
     n: '02',
@@ -15,7 +16,7 @@ const steps = [
     title: 'The Brine — Custom Premium Dashi',
     img: '/images/dashi-bowl.jpg',
     body: 'A custom premium dashi product, built for higher-end grocery stores and the consumer who treats sustainability as a value worth a remunerative choice.',
-    tints: ['var(--amber)', '#f0c089'],
+    tint: 'var(--amber)',
   },
   {
     n: '03',
@@ -23,15 +24,16 @@ const steps = [
     title: 'The Ember — Biochar',
     img: '/images/biochar-producer.jpg',
     body: 'The 30%+ of seaweed biomass normally discarded after dashi production is pyrolyzed into agricultural-grade biochar — "black gold" for soils, water retention, and a 1,000-year carbon lock.',
-    tints: ['#3a2618', '#7a4a26'],
+    tint: 'var(--amber-deep)',
   },
   {
     n: '04',
     label: 'Support',
     title: 'R&D into Seaweed Sinking',
-    img: '/images/charcoal.jpg',
+    img: '/images/sinking-seaweed.png',
+    isIllustration: true,
     body: 'A portion of every sale supports the R&D community investigating seaweed sinking — its viability, scaling, and the eco-system impacts that come with putting biomass into the deep ocean.',
-    tints: ['var(--teal-deep)', 'var(--magenta)'],
+    tint: 'var(--teal-deep)',
   },
   {
     n: '05',
@@ -39,35 +41,38 @@ const steps = [
     title: 'Higher-End Grocery',
     img: '/images/shipping.jpg',
     body: 'The dashi is built for higher-end grocery stores in the U.S., Canada, and Europe — for the consumer who treats sustainability as a value worth choosing.',
-    tints: ['var(--magenta)', '#4a5b80'],
+    tint: 'var(--magenta)',
   },
 ]
+
+const photoFilter = 'sepia(0.2) saturate(0.85) brightness(0.97) contrast(0.95)'
 
 export default function Process() {
   return (
     <div className="page">
-      <section className="page-hero">
-        <div className="page-hero-media" aria-hidden="true">
-          <img src="/images/chrome-3.jpg" alt="" />
-          <div className="page-hero-veil" />
-        </div>
+      <section className="page-hero has-illustration">
         <div className="container page-hero-inner">
-          <span className="eyebrow">The Process</span>
-          <h1>One overlooked ingredient. Five outcomes.</h1>
-          <p className="lead">
-            Starting from the waste seaweed left behind after dashi production, we make a
-            premium dashi product, an agricultural soil amendment, support for seaweed-sinking
-            R&amp;D, and a story consumers can actually follow. Here&rsquo;s how.
-          </p>
+          <div>
+            <span className="eyebrow">The Process</span>
+            <h1>One overlooked ingredient. Five outcomes.</h1>
+            <p className="lead">
+              Starting from the waste seaweed left behind after dashi production, we make a
+              premium dashi product, an agricultural soil amendment, support for seaweed-sinking
+              R&amp;D, and a story consumers can actually follow. Here&rsquo;s how.
+            </p>
+          </div>
+          <div className="page-hero-illustration" aria-hidden="true">
+            <img src="/images/seaweed-soup-char.png" alt="" />
+          </div>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
           <div className="timeline">
-            {steps.map((s, i) => (
+            {steps.map((s) => (
               <Reveal className="timeline-step" key={s.n}>
-                <div className="timeline-marker" style={{ '--m1': s.tints[0], '--m2': s.tints[1] }}>
+                <div className="timeline-marker" style={{ '--m1': s.tint }}>
                   <span>{s.n}</span>
                 </div>
                 <div className="timeline-content">
@@ -76,7 +81,11 @@ export default function Process() {
                   <p>{s.body}</p>
                 </div>
                 <div className="timeline-media">
-                  <img src={s.img} alt="" />
+                  <img
+                    src={s.img}
+                    alt=""
+                    style={s.isIllustration ? undefined : { filter: photoFilter }}
+                  />
                 </div>
               </Reveal>
             ))}
@@ -85,6 +94,24 @@ export default function Process() {
       </section>
 
       <section className="section section-dmrv">
+        <div className="container">
+          <Reveal>
+            <span className="eyebrow">The System on One Page</span>
+            <h2>The full loop, mapped.</h2>
+            <p className="lead" style={{ maxWidth: '60ch' }}>
+              From sea and farm, through drying and dashi production, into pyrolysis,
+              biochar, carbon credits, and back out to specialty grocery, restaurants,
+              and farmers markets.
+            </p>
+          </Reveal>
+
+          <Reveal className="process-diagram" delay={100} style={{ marginTop: '2.5rem' }}>
+            <img src="/images/process-diagram.png" alt="Brine + Ember process diagram showing seaweed inputs flowing through drying, dashi production, pyrolysis, and out to multiple end markets" />
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section">
         <div className="container">
           <Reveal>
             <span className="eyebrow">Transparency at Every Step</span>

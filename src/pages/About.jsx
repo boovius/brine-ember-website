@@ -4,20 +4,21 @@ import Reveal from '../components/Reveal.jsx'
 export default function About() {
   return (
     <div className="page">
-      <section className="page-hero">
-        <div className="page-hero-media" aria-hidden="true">
-          <img src="/images/chrome-1.jpg" alt="" />
-          <div className="page-hero-veil" />
-        </div>
+      <section className="page-hero has-illustration">
         <div className="container page-hero-inner">
-          <span className="eyebrow">About Brine + Ember</span>
-          <h1>A company built around a loop, not a line.</h1>
-          <p className="lead">
-            Most food brands end at the plate. Most climate companies end at the offset.
-            We close the gap — and the loop — by treating waste seaweed from dashi
-            production as raw material for three intertwined outcomes: nourishment,
-            soil restoration, and durable carbon sequestration.
-          </p>
+          <div>
+            <span className="eyebrow">About Brine + Ember</span>
+            <h1>A company built around a loop, not a line.</h1>
+            <p className="lead">
+              Most food brands end at the plate. Most climate companies end at the offset.
+              We close the gap — and the loop — by treating waste seaweed from dashi
+              production as raw material for three intertwined outcomes: nourishment,
+              soil restoration, and durable carbon sequestration.
+            </p>
+          </div>
+          <div className="page-hero-illustration" aria-hidden="true">
+            <img src="/images/sinking-seaweed.png" alt="" />
+          </div>
         </div>
       </section>
 

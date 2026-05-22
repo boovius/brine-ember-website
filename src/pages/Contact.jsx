@@ -4,10 +4,6 @@ export default function Contact() {
   return (
     <div className="page">
       <section className="page-hero">
-        <div className="page-hero-media" aria-hidden="true">
-          <img src="/images/chrome-1.jpg" alt="" />
-          <div className="page-hero-veil" />
-        </div>
         <div className="container page-hero-inner">
           <span className="eyebrow">Contact</span>
           <h1>Let&rsquo;s close the loop, together.</h1>

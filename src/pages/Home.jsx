@@ -34,34 +34,35 @@ export default function Home() {
     <div className="page">
       {/* HERO */}
       <section className="hero">
-        <div className="hero-media" aria-hidden="true">
-          <img src="/images/kelp-underwater.jpg" alt="" />
-          <div className="hero-veil" />
-        </div>
-
         <div className="container hero-inner">
-          <div className="hero-eyebrow">
-            <span className="eyebrow">Circular Seaweed · Climate-Forward Food</span>
-          </div>
-          <h1 className="hero-title">
-            From the <span className="word-brine">Brine</span> of the sea<br/>
-            to the <span className="word-ember">Ember</span> of <span className="word-life">life</span>.
-          </h1>
-          <p className="hero-sub">
-            A circular food &amp; climate company partnering with Japanese dashi producers
-            and North American seaweed farmers — turning waste seaweed into agricultural
-            biochar, a premium dashi product, and durable carbon sequestration.
-          </p>
-          <div className="hero-cta">
-            <Link to="/process" className="btn">Explore the Process</Link>
-            <Link to="/about" className="btn btn-ghost">Our Mission</Link>
+          <div className="hero-text">
+            <div className="hero-eyebrow">
+              <span className="eyebrow">Circular Seaweed · Climate-Forward Food</span>
+            </div>
+            <h1 className="hero-title">
+              From the <span className="word-brine">Brine</span> of the sea<br/>
+              to the <span className="word-ember">Ember</span> of <span className="word-life">life</span>.
+            </h1>
+            <p className="hero-sub">
+              A circular food &amp; climate company partnering with Japanese dashi producers
+              and North American seaweed farmers — turning waste seaweed into agricultural
+              biochar, a premium dashi product, and durable carbon sequestration.
+            </p>
+            <div className="hero-cta">
+              <Link to="/process" className="btn">Explore the Process</Link>
+              <Link to="/about" className="btn btn-ghost">Our Mission</Link>
+            </div>
           </div>
 
-          <a href="#crises" className="hero-scroll" aria-label="Scroll to next section">
-            <span>Scroll</span>
-            <span className="hero-scroll-line" />
-          </a>
+          <div className="hero-illustration" aria-hidden="true">
+            <img src="/images/dashi-factory-waste.png" alt="Illustration of a dashi factory with a pile of waste seaweed" />
+          </div>
         </div>
+
+        <a href="#crises" className="hero-scroll" aria-label="Scroll to next section">
+          <span>Scroll</span>
+          <span className="hero-scroll-line" />
+        </a>
       </section>
 
       {/* THREE CRISES */}
@@ -69,7 +70,7 @@ export default function Home() {
         <div className="container">
           <Reveal>
             <span className="eyebrow">Three Crises · One Circular Idea</span>
-            <h2>One overlooked ingredient, three planetary problems addressed.</h2>
+            <h2>One overlooked ingredient,<br/>three planetary problems addressed.</h2>
             <p className="lead" style={{ maxWidth: '60ch' }}>
               We sit at the intersection of food, agriculture, and climate — converting
               waste into yield and yield into sequestration.
@@ -95,8 +96,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <div className="chrome-band" aria-hidden="true" />
 
       {/* CIRCULARITY */}
       <section className="section section-circular">
@@ -152,7 +151,7 @@ export default function Home() {
           <div className="product-split">
             <Reveal className="product">
               <div className="product-media">
-                <img src="/images/dashi-bowl.jpg" alt="A bowl of dashi with kelp ribbons" />
+                <img src="/images/seaweed-soup-char.png" alt="Illustration of seaweed becoming soup becoming biochar" />
               </div>
               <div className="product-body">
                 <span className="small">Product 01</span>
@@ -171,7 +170,7 @@ export default function Home() {
 
             <Reveal className="product product-flip" delay={120}>
               <div className="product-media">
-                <img src="/images/charcoal.jpg" alt="Biochar — charred biomass" />
+                <img src="/images/charcoal.jpg" alt="Charcoal-textured biochar" style={{ filter: 'sepia(0.15) saturate(0.85) brightness(0.95)' }} />
               </div>
               <div className="product-body">
                 <span className="small">Product 02</span>
@@ -190,9 +189,11 @@ export default function Home() {
 
       {/* DEEP-SEA / R&D */}
       <section className="section section-legacy">
-        <div className="legacy-bg" aria-hidden="true" />
         <div className="container legacy-inner">
-          <Reveal>
+          <Reveal className="legacy-illustration">
+            <img src="/images/sinking-seaweed.png" alt="Illustration of seaweed strands sinking beneath the ocean surface" />
+          </Reveal>
+          <Reveal delay={120}>
             <span className="eyebrow">Supporting the Science</span>
             <h2>Deep-Sea Sequestration.</h2>
             <p className="lead">

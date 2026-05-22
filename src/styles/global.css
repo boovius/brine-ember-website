@@ -1,31 +1,39 @@
-/* Brine + Ember — global theme */
+/* Brine + Ember — global theme (cream / illustrated) */
 
 :root {
-  --bg: #050507;
-  --bg-elev: #0b0b10;
-  --bg-card: #111118;
-  --ink: #f4f1ec;
-  --ink-dim: #b9b3a8;
-  --ink-faint: #6d6a63;
-  --rule: #1c1c24;
+  --bg: #f5efe4;
+  --bg-elev: #fbf7ee;
+  --bg-card: #fdfbf4;
+  --ink: #1f2630;
+  --ink-dim: #4a5160;
+  --ink-faint: #8a8478;
+  --rule: #d9d1bf;
 
-  --magenta: #00c75e;
-  --magenta-bright: #1fe575;
-  --magenta-soft: rgba(0, 199, 94, 0.18);
-  --magenta-glow: 0 0 36px rgba(31, 229, 117, 0.35);
+  /* Primary brand accent — seaweed green. Variable name kept for backwards
+     compatibility with earlier theme; the value is now the new palette. */
+  --magenta: #3a7c4f;
+  --magenta-bright: #4d9961;
+  --magenta-soft: rgba(58, 124, 79, 0.12);
+  --magenta-glow: 0 6px 24px rgba(58, 124, 79, 0.18);
 
-  --amber: #d99548;
-  --amber-deep: #8a5a1e;
-  --teal: #1a6b6b;
-  --teal-deep: #0d3b3f;
+  --amber: #c45c2e;       /* ember / clay */
+  --amber-deep: #8a3e1c;
+  --teal: #4a7a8c;        /* sea / brine */
+  --teal-deep: #2f5d76;
 
-  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, "Times New Roman", serif;
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --word-brine: #2f5d76;
+  --word-ember: #c45c2e;
+  --word-life:  #3a7c4f;
+
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
 
   --container: 1180px;
   --gutter: clamp(1.25rem, 3vw, 2.5rem);
   --section-y: clamp(4rem, 9vw, 7.5rem);
+
+  --paper-shadow: 0 1px 0 rgba(31, 38, 48, 0.04), 0 14px 30px -22px rgba(31, 38, 48, 0.18);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -38,7 +46,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   color: var(--ink);
-  line-height: 1.55;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -47,9 +55,9 @@ body {
 img { max-width: 100%; display: block; }
 
 a {
-  color: var(--ink);
+  color: var(--magenta);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid rgba(58, 124, 79, 0.35);
   transition: color .2s, border-color .2s;
 }
 a:hover { color: var(--magenta-bright); border-color: var(--magenta-bright); }
@@ -57,18 +65,30 @@ a:hover { color: var(--magenta-bright); border-color: var(--magenta-bright); }
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 500;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   margin: 0 0 .6em;
-  line-height: 1.08;
+  line-height: 1.12;
+  color: var(--ink);
 }
 
 h1 { font-size: clamp(2.6rem, 6.4vw, 5.4rem); }
 h2 { font-size: clamp(2rem, 4.4vw, 3.4rem); }
-h3 { font-size: clamp(1.3rem, 2.2vw, 1.7rem); }
-h4 { font-size: 1.05rem; letter-spacing: .12em; text-transform: uppercase; font-family: var(--font-sans); font-weight: 600; color: var(--magenta-bright); }
+h3 { font-size: clamp(1.25rem, 2.2vw, 1.65rem); }
+h4 {
+  font-size: .82rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--magenta);
+}
 
 p { margin: 0 0 1rem; color: var(--ink-dim); font-size: 1.02rem; }
-p.lead { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: var(--ink); line-height: 1.45; }
+p.lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  color: var(--ink);
+  line-height: 1.55;
+}
 
 .container {
   width: 100%;
@@ -84,23 +104,23 @@ p.lead { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: var(--ink); line-heigh
   display: inline-flex;
   align-items: center;
   gap: .6rem;
-  font-size: .75rem;
+  font-size: .72rem;
   letter-spacing: .22em;
   text-transform: uppercase;
-  color: var(--magenta-bright);
+  color: var(--magenta);
   font-weight: 600;
   margin-bottom: 1.2rem;
 }
 .eyebrow::before {
   content: "";
-  width: 22px;
+  width: 26px;
   height: 1px;
-  background: var(--magenta-bright);
+  background: var(--magenta);
 }
 
 .divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--rule) 20%, var(--rule) 80%, transparent);
+  background: var(--rule);
   margin: 0;
 }
 
@@ -109,41 +129,56 @@ p.lead { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: var(--ink); line-heigh
   align-items: center;
   gap: .6rem;
   padding: .85rem 1.4rem;
-  border: 1px solid var(--magenta);
-  background: transparent;
-  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  background: var(--ink);
+  color: var(--bg);
   font-family: var(--font-sans);
-  font-size: .85rem;
-  letter-spacing: .12em;
+  font-size: .82rem;
+  letter-spacing: .14em;
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
-  transition: background .2s, color .2s, box-shadow .2s, transform .2s;
+  transition: background .2s, color .2s, border-color .2s, transform .2s;
 }
 .btn:hover {
   background: var(--magenta);
-  color: #fff;
-  box-shadow: var(--magenta-glow);
   border-color: var(--magenta);
+  color: #fff;
+  transform: translateY(-1px);
 }
-.btn.btn-ghost { border-color: var(--rule); }
-.btn.btn-ghost:hover { border-color: var(--ink); background: transparent; color: var(--ink); box-shadow: none; }
+.btn.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.btn.btn-ghost:hover {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
 
 .card {
   background: var(--bg-card);
   border: 1px solid var(--rule);
+  border-radius: 6px;
   padding: clamp(1.5rem, 2.5vw, 2.2rem);
   position: relative;
-  transition: border-color .25s, transform .25s;
+  transition: border-color .25s, transform .25s, box-shadow .25s;
 }
-.card:hover { border-color: var(--magenta); }
+.card:hover {
+  border-color: var(--magenta);
+  box-shadow: var(--paper-shadow);
+  transform: translateY(-2px);
+}
 .card .num {
   font-family: var(--font-display);
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: var(--magenta);
   display: block;
-  margin-bottom: .4rem;
+  margin-bottom: .3rem;
+  line-height: 1;
 }
+.card p { color: var(--ink-dim); }
 
 .grid {
   display: grid;
@@ -155,7 +190,7 @@ p.lead { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: var(--ink); line-heigh
 /* Subtle on-scroll reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(18px);
   transition: opacity .9s ease, transform .9s ease;
 }
 .reveal.in {
@@ -163,32 +198,28 @@ p.lead { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: var(--ink); line-heigh
   transform: translateY(0);
 }
 
-/* Chrome accent band */
+/* Hand-drawn-feeling divider band (replaces the old chrome-band) */
 .chrome-band {
-  height: 110px;
-  background: url('/images/chrome-2.jpg') center/cover no-repeat;
-  filter: saturate(1.1) contrast(1.05);
-  position: relative;
-}
-.chrome-band::after {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, var(--bg), transparent 30%, transparent 70%, var(--bg));
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--rule) 20%, var(--rule) 80%, transparent);
+  margin: clamp(2rem, 5vw, 4rem) 0;
 }
 
 /* Brand mark */
 .brand {
   font-family: var(--font-display);
   font-size: 1.35rem;
-  letter-spacing: .04em;
+  letter-spacing: .02em;
   display: inline-flex;
   align-items: center;
   gap: .35rem;
   color: var(--ink);
+  border-bottom: none;
 }
+.brand:hover { color: var(--magenta); border-bottom: none; }
 .brand .plus {
-  color: var(--magenta-bright);
-  font-weight: 300;
+  color: var(--magenta);
+  font-weight: 400;
   font-size: 1.4em;
   line-height: 0;
   position: relative;
@@ -199,4 +230,18 @@ p.lead { font-size: clamp(1.05rem, 1.7vw, 1.3rem); color: var(--ink); line-heigh
 .center { text-align: center; }
 .mt-0 { margin-top: 0 !important; }
 .muted { color: var(--ink-faint); }
-.small { font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); }
+.small {
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 600;
+}
+
+/* Subtle paper texture for full-bleed feature surfaces */
+.paper {
+  background:
+    radial-gradient(ellipse at 15% 10%, rgba(255, 255, 255, 0.6), transparent 55%),
+    radial-gradient(ellipse at 85% 85%, rgba(217, 209, 191, 0.3), transparent 60%),
+    var(--bg);
+}

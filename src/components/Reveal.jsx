@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-export default function Reveal({ children, as: Tag = 'div', className = '', delay = 0 }) {
+export default function Reveal({ children, as: Tag = 'div', className = '', delay = 0, style }) {
   const ref = useRef(null)
   const [shown, setShown] = useState(false)
 
@@ -23,7 +23,7 @@ export default function Reveal({ children, as: Tag = 'div', className = '', dela
   }, [delay])
 
   return (
-    <Tag ref={ref} className={`reveal ${shown ? 'in' : ''} ${className}`}>
+    <Tag ref={ref} className={`reveal ${shown ? 'in' : ''} ${className}`} style={style}>
       {children}
     </Tag>
   )
