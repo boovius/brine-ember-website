@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           <div className="hero-illustration" aria-hidden="true">
-            <img src="/images/dashi-factory-waste.png" alt="Illustration of a dashi factory with a pile of waste seaweed" />
+            <img src="/images/hero.png" alt="Illustration of an ocean wave on the left, a steaming bowl of dashi at the center, fire on the right, with seaweed and biochar in the earth below" />
           </div>
         </div>
 
@@ -68,14 +68,20 @@ export default function Home() {
       {/* THREE CRISES */}
       <section id="crises" className="section section-crises">
         <div className="container">
-          <Reveal>
-            <span className="eyebrow">Three Crises · One Circular Idea</span>
-            <h2>One overlooked ingredient,<br/>three planetary problems addressed.</h2>
-            <p className="lead" style={{ maxWidth: '60ch' }}>
-              We sit at the intersection of food, agriculture, and climate — converting
-              waste into yield and yield into sequestration.
-            </p>
-          </Reveal>
+          <div className="crises-head">
+            <Reveal>
+              <span className="eyebrow">Three Crises · One Circular Idea</span>
+              <h2>One overlooked ingredient,<br/>three planetary problems addressed.</h2>
+              <p className="lead" style={{ maxWidth: '52ch' }}>
+                We sit at the intersection of food, agriculture, and climate — converting
+                waste into yield and yield into sequestration. It starts with a problem
+                hiding in plain sight: most of the seaweed used to make dashi gets thrown out.
+              </p>
+            </Reveal>
+            <Reveal className="crises-illustration" delay={100}>
+              <img src="/images/dashi-factory-waste.png" alt="Illustration of a dashi factory floor with a pile of waste seaweed labeled 'waste problem'" />
+            </Reveal>
+          </div>
 
           <div className="grid grid-3" style={{ marginTop: '3rem' }}>
             <Reveal className="card">
